@@ -1,0 +1,14 @@
+Alan:
+  label : 'T'
+  trusted:
+    path : [
+      "test_files/clinical.txt",
+      "test_files/clinical.txt"
+    ]
+    object : [
+      "THE EMAIL ADDRESS OF COWORKER1",
+      "THE EMAIL ADDRESS OF COWORKER2",
+      "THE EMAIL ADDRESS OF DOCTOR",
+      "THE EMAIL ADDRESS OF ALICE"
+    ]
+  

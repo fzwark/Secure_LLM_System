@@ -1,0 +1,38 @@
+search_gmail:
+  local_deploy: 0
+  return_type: list[dict]
+  check:
+    type: 'return'
+    keys: [{'object' : 'sender'}]
+
+send_gmail_message:
+  local_deploy: 0
+  return_type: str
+  check: None
+
+read_file:
+  local_deploy: 0
+  dir: "./test_files/"
+  return_type: str
+  check:
+    type: 'input'
+    keys: [{'path' : 'file_path'}]
+
+write_file:
+  dir: "./test_files/"
+  return_type: str
+  local_deploy: 0
+  check: None
+
+append_file:
+  dir: "./test_files/"
+  return_type: str
+  local_deploy: 1
+  check: None
+
+delete_file:
+  dir: "./test_files/"
+  return_type: str
+  local_deploy: 1
+  check: None
+

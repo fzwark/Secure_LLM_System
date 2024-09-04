@@ -1,0 +1,15 @@
+anthropic==0.31.2
+jsonschema==4.23.0
+langchain==0.2.11
+langchain_anthropic==0.1.21
+langchain_community==0.2.10
+langchain_core==0.2.24
+langchain_google_genai==1.0.8
+langchain_openai==0.1.19
+nltk==3.8.1
+openai==1.37.1
+protobuf==5.27.2
+PyYAML==6.0.1
+together==1.2.3
+torch==2.4.0
+tqdm==4.65.0

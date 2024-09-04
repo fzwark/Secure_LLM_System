@@ -1,0 +1,14 @@
+Patient Overview:
+
+Name: John Doe
+Age: 58 years 
+Condition: Type 2 Diabetes
+Treatment: Metformin, diet changes, increased exercise
+
+Progress Summary:
+
+Initial: Obese, high glucose and HbA1c.
+3 Months: 5% weight loss, improved glucose levels.
+6 Months: Continued weight loss, glucose levels nearing target.
+12 Months: 10% total weight loss, glucose and HbA1c within target range.
+Feedback: Increased energy, reduced hypoglycemic events, joined gym.

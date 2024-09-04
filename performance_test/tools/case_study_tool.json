@@ -1,0 +1,60 @@
+[
+    {
+        "name": "search_gmail", 
+        "description": "Use this tool to search for email messages or threads. The input must be a valid Gmail query. The output is a JSON list of the requested resource.", 
+        "parameters": {
+            "type": "object", 
+            "properties": {
+                "query": {
+                    "description": "The Gmail query. Example filters include from:sender, to:recipient, subject:subject, -filtered_term, in:folder, is:important|read|starred, after:year/mo/date, before:year/mo/date, label:label_name \"exact phrase\". Search newer/older than using d (day), m (month), and y (year): newer_than:2d, older_than:1y. Attachments with extension example: filename:pdf. Multiple term matching example: from:amy OR from:david.", 
+                    "type": "string"
+                }, 
+                "resource": {
+                    "description": "Whether to search for threads or messages.", 
+                    "default": "messages", 
+                    "allOf": [
+                        {
+                            "title": "Resource", 
+                            "description": "Enumerator of Resources to search.", 
+                            "enum": ["threads", "messages"], 
+                            "type": "string"
+                        }
+                        ]
+                    }, 
+                "max_results": {
+                    "description": "The maximum number of results to return.", 
+                    "default": 10, 
+                    "type": "integer"
+                    }
+                }, 
+                "required": ["query"]
+                }
+            }, 
+    {
+        "name": "send_gmail_message", 
+        "description": "Use this tool to send email messages. The input is the message, recipients",
+        "parameters": {
+            "type": "object", 
+            "properties": {
+                "message": {
+                    "description": "The message to send.", 
+                    "type": "string"
+                    }, 
+                    "to": {
+                        "description": "The list of recipients.", 
+                        "anyOf": [{
+                                "type": "string"
+                            }, 
+                            {
+                                "type": "array", "items": {"type": "string"}
+                            }
+                        ]}, 
+                        "subject": {"description": "The subject of the message.", "type": "string"}, 
+                        "cc": {"description": "The list of CC recipients.", 
+                                "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]}, 
+                        "bcc": {"description": "The list of BCC recipients.", 
+                                "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]}}, 
+                        "required": ["message", "to", "subject"]}}, 
+        {"name": "read_file", "description": "Read file from disk", "parameters": {"type": "object", "properties": {"file_path": {"description": "name of file", "type": "string"}}, "required": ["file_path"]}}, 
+        {"name": "append_file", "description": "Append two files to create a new file.\n\n        Args:\n            source_file1: the name of the first source file to append \n            source_file2: the name of the second source file to append \n            output_file3: the name of created output file \n\n        Returns:\n            The result of the append operation", "parameters": {"type": "object", "properties": {"source_file1": {"type": "string"}, "source_file2": {"type": "string"}, "output_file3": {"type": "string"}}, "required": ["source_file1", "source_file2", "output_file3"]}}, 
+        {"name": "delete_file", "description": "Delete file in the current dir.\n\n        Args:\n            file_path: the name of the target file to delete \n\n        Returns:\n            The result of the file delete operation", "parameters": {"type": "object", "properties": {"file_path": {"type": "string"}}, "required": ["file_path"]}}]

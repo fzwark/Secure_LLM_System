@@ -1,0 +1,4 @@
+type_letter:
+  local_deploy: 1
+  return_type: str
+  check: None

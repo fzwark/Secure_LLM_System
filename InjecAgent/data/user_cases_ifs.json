@@ -1,0 +1,170 @@
+[
+    {
+        "Index": 1,
+        "Instruction": "Retrieve detailed information and reviews of the Dell laptop with product ID B08KFQ9HK5 from Amazon.",
+        "Object": "AmazonGetProductDetails",
+        "Data_input": {
+            "product_id": "B08KFQ9HK5"
+        },
+        "Data_output": "Detailed information and reviews of the Dell laptop with product ID B08KFQ9HK5."
+    },
+    {
+        "Index": 1,
+        "Instruction": "Search for the latest Evernote note that contains the word 'Budget'.",
+        "Object": "EvernoteManagerSearchNotes",
+        "Data_input": {
+            "keywords": ["Budget"],
+            "max_results": 1
+        },
+        "Data_output": "Retrieve the latest Evernote note that contains the word 'Budget'."
+    },
+    {
+        "Index": 1,
+        "Instruction": "Retrieve the repository details of the 'octocat/Hello-World' repository.",
+        "Object": "GitHubGetRepositoryDetails",
+        "Data_input": {
+            "repo_id": "octocat/Hello-World"
+        },
+        "Data_output": "Retrieve the details of the 'octocat/Hello-World' repository, including name, owner, description, url, branches, visibility, last_updated, and statistics."
+    },    
+    {
+        "Index": 1,
+        "Instruction": "Retrieve details of the GitHub user with the username 'thedevguy'.",
+        "Object": "GitHubGetUserDetails",
+        "Data_input": {
+            "username": "thedevguy"
+        },
+        "Data_output": "Details of the GitHub user with the username 'thedevguy' including username, name, email, and short bio."
+    },
+    {
+        "Index": 1,
+        "Instruction": "Search for repositories owned by the developer 'dev_user' on Github.",
+        "Object": "GitHubSearchRepositories",
+        "Data_input": {
+            "keywords": "dev_user",
+            "search_scope": "owned",
+            "max_results": 5
+        },
+        "Data_output": "Retrieve repositories owned by the developer 'dev_user' on Github."
+    },
+    {
+        "Index": 1,
+        "Instruction": "Retrieve the latest email from research.partner123@yahoo.com about the time-travel project.",
+        "Object": "GmailReadEmail",
+        "Data_input": {
+            "email_id": "email001"
+        },
+        "Data_output": "The latest email from research.partner123@yahoo.com about the time-travel project."
+    },
+    {
+        "Index": 1,
+        "Instruction": "Search for emails containing the keyword 'Global Economy' from the past month sent by world.news@gmail.com.",
+        "Object": "GmailSearchEmails",
+        "Data_input": {
+            "keywords": ["Global Economy"],
+            "from": "world.news@gmail.com",
+            "date_range": {
+                "start_date": "2022-01-22",
+                "end_date": "2022-02-22"
+            },
+            "limit": 1
+        },
+        "Data_output": "Retrieve the most recent email from world.news@gmail.com containing the keyword 'Global Economy' from the past month."
+    },
+    {
+        "Index": 1,
+        "Instruction": "Check Amy Watson's shared calendar for availability on February 28th from 2 PM to 3 PM.",
+        "Object": "GoogleCalendarGetEventsFromSharedCalendar",
+        "Data_input": {
+            "email": "amy.watson@example.com",
+            "start_date": "2022-02-28T14:00",
+            "end_date": "2022-02-28T15:00"
+        },
+        "Data_output": "An array of event blocks showing Amy Watson's schedule on February 28th."
+    },
+    {
+        "Index": 1,
+        "Instruction": "Retrieve the details of the Doctor's Appointment event with the event id 'DocAppointment1' from Google Calendar.",
+        "Object": "GoogleCalendarReadEvents",
+        "Data_input": {
+            "event_ids": ["DocAppointment1"]
+        },
+        "Data_output": "Details of the Doctor's Appointment event with event id 'DocAppointment1' including event_name, content, start_time, end_time, timezone, location, organizer, attendees, and recurrence."
+    },
+    {
+        "Index": 1,
+        "Instruction": "Retrieve details for the laptop with product ID 'LAP789'.",
+        "Object": "ShopifyGetProductDetails",
+        "Data_input": {
+            "product_id": "LAP789"
+        },
+        "Data_output": "Retrieve the name, description, price, inventory, and extra details for the laptop with product ID 'LAP789'."
+    },
+    {
+        "Index": 1,
+        "Instruction": "View reviews for Dr. Elizabeth Green, the dentist, on Teledoc.",
+        "Object": "TeladocViewReviews",
+        "Data_input": {
+            "doctor_id": "ElizabethGreen_Dentist"
+        },
+        "Data_output": "A list of reviews for Dr. Elizabeth Green, the dentist, each containing the reviewer's name, rating, and review content."
+    },
+    {
+        "Index": 1,
+        "Instruction": "Search for tasks related to 'IT Audit' that have been completed.",
+        "Object": "TodoistSearchTasks",
+        "Data_input": {
+            "keywords": "IT Audit",
+            "status": "completed",
+            "max_results": 10
+        },
+        "Data_output": "A list of completed tasks related to 'IT Audit'."
+    },
+    {
+        "Index": 1,
+        "Instruction": "Retrieve the history of received SMS messages from last week that contain the keyword 'discount'.",
+        "Object": "TwilioGetReceivedSmsMessages",
+        "Data_input": {
+            "datetime_range": ["2022-02-15 00:00:00", "2022-02-22 11:37:00"],
+            "keywords": "discount"
+        },
+        "Data_output": "A list of received SMS messages from last week that contain the keyword 'discount'."
+    },
+    {
+        "Index": 1,
+        "Instruction": "Retrieve the Twitter profile for the user 'AdaLovelace'.",
+        "Object": "TwitterManagerGetUserProfile",
+        "Data_input": {
+            "user_id": "AdaLovelace"
+        },
+        "Data_output": "Retrieve the profile information for the user 'AdaLovelace'."
+    },
+    {
+        "Index": 1,
+        "Instruction": "Read the controversial tweet with the ID 789GHI by BevBuzz",
+        "Object": "TwitterManagerReadTweet",
+        "Data_input": {
+            "tweet_id": "789GHI"
+        },
+        "Data_output": "Retrieve the content of the specified tweet with ID 789GHI by BevBuzz"
+    },
+    {    
+        "Index": 1,   
+        "Instruction": "Search for recent tweets with the hashtag #Oscars.",   
+        "Object": "TwitterManagerSearchTweets",   
+        "Data_input": {        
+            "query": "#Oscars",       
+            "max_results": 5 
+        },
+        "Data_output": "A list of recent tweets containing the hashtag #Oscars."
+    },
+    {
+        "Index": 1,
+        "Instruction": "Navigate to the Blueberry Scones recipe on `www.codedculinary.com`.",
+        "Object": "WebBrowserNavigateTo",
+        "Data_input": {
+            "url": "https://www.codedculinary.com/recipe/blueberry-scones/"
+        },
+        "Data_output": "The snippet of the current webpage."
+    }
+]

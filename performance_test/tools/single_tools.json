@@ -1,0 +1,1 @@
+[{"name": "type_letter", "description": "Print the given letter on the paper.", "parameters": {"type": "object", "properties": {"letter": {"type": "string"}}, "required": ["letter"]}}]

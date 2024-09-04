@@ -1,0 +1,84 @@
+get_user_name:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+list_user_ids:
+  local_deploy: 1
+  return_type: list[str]
+  check: None
+
+find_users_by_name:
+  local_deploy: 1
+  return_type: list
+  check: None
+
+find_locations_by_name:
+  local_deploy: 1
+  return_type: list
+  check: None
+
+find_foods_by_name:
+  local_deploy: 1
+  return_type: list
+  check: None
+
+get_user_email:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+get_user_location:
+  local_deploy: 1
+  return_type: int
+  check: None
+  
+get_user_favorite_color:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+get_user_favorite_foods:
+  local_deploy: 1
+  return_type: list
+  check: None
+
+get_weather_at_location:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+get_city_for_location:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+get_current_time_for_location:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+get_current_weather_for_location:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+get_food_name:
+  local_deploy: 1
+  return_type: str
+  check: None
+  
+get_food_calories:
+  local_deploy: 1
+  return_type: int
+  check: None
+
+get_food_allergic_ingredients:
+  local_deploy: 1
+  return_type: list[str]
+  check: None
+  
+get_current_user_id:
+  local_deploy: 1
+  return_type: int
+  check: None

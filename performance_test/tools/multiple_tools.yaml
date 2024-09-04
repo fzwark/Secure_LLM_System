@@ -1,0 +1,132 @@
+a:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+b:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+c:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+d:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+
+e:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+f:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+g: 
+  local_deploy: 1
+  return_type: str
+  check: None
+
+h:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+i:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+j:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+k:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+l:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+
+m: 
+  local_deploy: 1
+  return_type: str
+  check: None
+
+n:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+o:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+p:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+q:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+r:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+s:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+t:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+
+u:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+v:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+w:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+x:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+y:
+  local_deploy: 1
+  return_type: str
+  check: None
+
+z:
+  local_deploy: 1
+  return_type: str
+  check: None
