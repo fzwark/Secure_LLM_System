@@ -4,7 +4,7 @@
 ![Indirect Prompt Injection Attacks](https://img.shields.io/badge/Indirect_Prompt_Injection-Attacks-yellow.svg) ![LLM-Based System](https://img.shields.io/badge/LLM_Based-System-blue.svg) ![System Defense](https://img.shields.io/badge/System_Level-Defense-orange.svg) ![Information Flow Control](https://img.shields.io/badge/Information_Flow-Control-green.svg)
 
 <p align="center">
-  <a href="https://arxiv.org/abs/TODO" target="_blank">📄 Paper </a> | <a href="https://TODO" target="_blank">🌐 Website</a> | <a href="https://twitter.com/TODO" target="_blank">𝕏 Twitter</a> 
+  <a href="https://arxiv.org/abs/2409.19091" target="_blank">📄 Paper </a> | <a href="https://TODO" target="_blank">🌐 Website</a> | <a href="https://twitter.com/TODO" target="_blank">𝕏 Twitter</a> 
 </p>
 
 
@@ -15,7 +15,7 @@ Large Language Model-based systems (LLM-based systems) are essentially informati
 
 
 ## Updates
-- [2024.TO.DO] 🚀 Our paper and code are released!
+- [2024.10.01] 🚀 Our paper and code are released!
 
 
 ## Build Environment
@@ -149,5 +149,13 @@ We would like to express our sincere gratitude to [Ruoyu Wang](https://ruoyuwang
 If you use this codebase, please consider citing our paper:
 
 ```bibtex
-TODO
+@misc{wu2024systemleveldefenseindirectprompt,
+      title={System-Level Defense against Indirect Prompt Injection Attacks: An Information Flow Control Perspective}, 
+      author={Fangzhou Wu and Ethan Cecchetti and Chaowei Xiao},
+      year={2024},
+      eprint={2409.19091},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2409.19091}, 
+}
 ```
