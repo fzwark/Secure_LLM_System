@@ -12,14 +12,6 @@ class Executor:
         else:
             self.label = label
         
-        if ("gemini" in llm.model) or ("claude" in llm.model):
-            self.template = self.sys + "\n"
-        else:
-            self.template = [
-                {"role": "system", "content": self.sys},
-                {"role": "user", "content": "{input}"}
-            ]
-
 
     def get_label(self):
         return self.label
@@ -32,15 +24,9 @@ class Executor:
         object = context["Object"] 
         indication = 1
         if object == "LLM":
-
-            if ("gemini" in self.llm.model) or ("claude" in self.llm.model):
-                self.template = self.template + context["Instruction"] + "\n" + str(context["Data_input"])
-            else:
-                self.template[1]["content"] = context["Instruction"] + "\n"
-                self.template[1]["content"] += str(context["Data_input"])
-
+           input = context["Instruction"] + "\n" + str(context["Data_input"])
             try:
-                ret = self.llm.run_one_message(self.template)
+                ret = self.llm.run_one_message(self.sys, input)
             except:
                 ret = f"Error in LLM generation process."
                 indication = 0
